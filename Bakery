@@ -1,0 +1,35 @@
+CREATE DATABASE MyBakery;
+USE MyBakery;
+
+
+
+
+CREATE TABLE Savoury
+(id INT NOT NULL,
+item_name VARCHAR(50) NOT NULL,
+price FLOAT(4) NOT NULL, main_ingredient VARCHAR(50));
+
+INSERT INTO Sweet
+(id, item_name, price)
+VALUES
+(1, 'doughnut', 0.75);
+
+SELECT * FROM Sweet;
+
+INSERT INTO Sweet
+(id, item_name, price)
+VALUES
+(2, 'pain au chocolate', 1.40),
+(3, 'cannoli', 2.70),
+(4, 'apple turnover',1.99);
+
+SELECT * FROM Sweet;
+
+INSERT INTO Savoury
+(id, item_name, price, main_ingredient)
+VALUES
+(1, 'Crisps', 0.5, 'potatoes'),
+(2, 'apples',0.45, NULL),
+(3, 'pie', 1.60, 'chicken'),
+(4, 'sausage roll', 2.1, 'pork');
+
